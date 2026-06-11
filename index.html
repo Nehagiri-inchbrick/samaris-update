@@ -112,7 +112,7 @@
             href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@400;500;600;700&family=Pinyon+Script&display=optional">
     </noscript>
     <link rel="preload" as="image" href="images/banner-new.png" fetchpriority="high">
-    <link rel="preload" href="style.deferred.css?v=5.5" as="style">
+    <link rel="preload" href="style.deferred.css?v=5.6" as="style">
     <style id="critical-css">
         :root {
             --primary: #C5A059;
@@ -985,10 +985,8 @@
             .hero__inner {
                 grid-template-columns: 1fr;
                 text-align: center;
-                gap: 40px;
-                /* Reduced gap */
+                gap: 32px;
                 padding: 100px 0 60px;
-                /* Adjusted padding */
             }
 
             .hero__content {
@@ -1024,13 +1022,13 @@
                 height: auto;
                 min-height: 100vh;
                 display: flex;
-                align-items: center;
-                padding: 120px 0 80px;
+                align-items: flex-start;
+                padding: 96px 0 48px;
             }
 
             .hero__inner {
                 grid-template-columns: 1fr;
-                gap: 50px;
+                gap: 20px;
                 text-align: center;
                 padding: 0;
             }
@@ -1046,11 +1044,17 @@
                 font-size: clamp(24px, 6vw, 36px);
                 letter-spacing: -0.25px;
                 max-width: 100%;
+                margin-bottom: 10px;
             }
 
             .hero__badge {
                 font-size: clamp(10px, 2.5vw, 12px);
                 padding: 6px 12px;
+                margin-bottom: 14px;
+            }
+
+            .hero__sub {
+                margin-bottom: 14px;
             }
 
             .hero .container.hero__inner {
@@ -1090,9 +1094,9 @@
                 flex-direction: column;
                 width: 100%;
                 max-width: 400px;
-                gap: 12px;
-                min-height: 168px;
-                margin-bottom: 32px;
+                gap: 10px;
+                min-height: 0;
+                margin-bottom: 0;
             }
 
             .hero__btn {
@@ -2005,9 +2009,9 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="style.deferred.css?v=5.5" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="style.deferred.css?v=5.6" media="print" onload="this.media='all'">
     <noscript>
-        <link rel="stylesheet" href="style.deferred.css?v=5.5">
+        <link rel="stylesheet" href="style.deferred.css?v=5.6">
     </noscript>
 </head>
 
@@ -2267,8 +2271,8 @@
                 </span>
 
                 <h1 class="hero__title">
-                    Ultra-Luxury Residences<br>
-                    <span class="hero__title--alt">on <strong>Golf Course Road</strong></span>
+                    The Last & Largest Land Parcel<br>
+                    <span class="hero__title--alt">on <strong>Golf Course Road, Gurugram</strong></span>
                 </h1>
 
                 <p class="hero__sub">3 &amp; 4 BHK · From ₹9.68 Cr Onwards</p>
@@ -2695,8 +2699,8 @@
                     luxurious living experience.</p>
             </header>
 
-            <div class="intro__cards reveal-up">
-                <article class="intro__card">
+            <div class="intro__cards reveal-up" role="list" aria-label="Godrej Samaris highlights">
+                <article class="intro__card" role="listitem">
                     <div class="intro__icon-wrap" aria-hidden="true">
                         <svg class="intro__icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="40" cy="40" r="36" stroke="#c5a059" stroke-width="1" stroke-dasharray="4 4" opacity="0.55"/>
@@ -2714,7 +2718,7 @@
                     <span class="intro__card-accent" aria-hidden="true"></span>
                 </article>
 
-                <article class="intro__card">
+                <article class="intro__card" role="listitem">
                     <div class="intro__icon-wrap" aria-hidden="true">
                         <svg class="intro__icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="40" cy="40" r="36" stroke="#c5a059" stroke-width="1" stroke-dasharray="4 4" opacity="0.55"/>
@@ -2731,7 +2735,7 @@
                     <span class="intro__card-accent" aria-hidden="true"></span>
                 </article>
 
-                <article class="intro__card">
+                <article class="intro__card" role="listitem">
                     <div class="intro__icon-wrap" aria-hidden="true">
                         <svg class="intro__icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="40" cy="40" r="36" stroke="#c5a059" stroke-width="1" stroke-dasharray="4 4" opacity="0.55"/>

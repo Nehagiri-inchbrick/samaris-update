@@ -1985,16 +1985,53 @@
 }
 
 @media (max-width: 900px) {
+    .intro__container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .intro__head {
+        padding-left: clamp(20px, 4vw, 40px);
+        padding-right: clamp(20px, 4vw, 40px);
+    }
+
     .intro__cards {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-        margin: 0 auto;
+        display: flex;
+        gap: 14px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        overscroll-behavior-x: contain;
+        padding: 0 clamp(20px, 4vw, 40px) 10px;
+        margin: 0;
+        max-width: none;
+    }
+
+    .intro__cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    .intro__card {
+        flex: 0 0 min(78vw, 280px);
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+
+    .intro__card:hover {
+        transform: none;
     }
 }
 
 @media (max-width: 768px) {
     .intro {
         padding: 44px 0;
+    }
+
+    .intro__card {
+        flex-basis: min(82vw, 260px);
     }
 }
 
