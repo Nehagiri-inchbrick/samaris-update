@@ -2372,15 +2372,10 @@
 
                     <div class="ec-banner__info-row">
                         <div class="ec-banner__price-col">
-                            <p class="ec-banner__label">Ultra-Luxury Penthouses</p>
-                            <div class="ec-banner__price-box">
-                                <div class="ec-banner__price-row">
-                                    <span class="ec-banner__currency">₹</span>
-                                    <span class="ec-banner__amount">200</span>
-                                    <span class="ec-banner__cr">CR<sup>*</sup></span>
-                                </div>
-                                <p class="ec-banner__price-sub">Worth of luxury · Only <strong>5</strong> minutes away</p>
-                            </div>
+                            <p class="ec-banner__statement">
+                                An Ultra-Luxury Penthouse Worth <strong>₹200 Cr</strong> Sold Out in Just
+                                <strong>5 Minutes</strong>.
+                            </p>
                         </div>
 
                         <div class="ec-banner__vsep" aria-hidden="true"></div>
@@ -2542,60 +2537,21 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            justify-content: center;
             padding-right: 18px;
         }
 
-        .ec-banner__label {
-            font-size: 10px;
-            letter-spacing: 2px;
-            color: #6b7280;
+        .ec-banner__statement {
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: clamp(16px, 1.6vw, 20px);
+            font-weight: 500;
+            line-height: 1.5;
+            color: #1e2a45;
+        }
+
+        .ec-banner__statement strong {
             font-weight: 700;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-
-        .ec-banner__price-row {
-            display: flex;
-            align-items: flex-start;
-            gap: 3px;
-            line-height: 1;
-        }
-
-        .ec-banner__currency {
-            font-size: clamp(15px, 1.3vw, 18px);
-            color: #b8921f;
-            font-weight: 700;
-            padding-top: 5px;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .ec-banner__amount {
-            font-family: Georgia, serif;
-            font-size: clamp(36px, 3.8vw, 52px);
-            font-weight: 700;
-            color: #b8921f;
-            letter-spacing: -1.5px;
-            line-height: 1;
-        }
-
-        .ec-banner__cr {
-            font-size: clamp(11px, 1vw, 14px);
-            color: #b8921f;
-            font-weight: 700;
-            padding-top: 7px;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .ec-banner__price-sub {
-            font-size: 11px;
-            letter-spacing: 0.4px;
-            color: #6b7280;
-            margin-top: 8px;
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.45;
-        }
-
-        .ec-banner__price-sub strong {
             color: #a68045;
         }
 
@@ -2697,8 +2653,8 @@
                 text-align: center;
             }
 
-            .ec-banner__price-row {
-                justify-content: center;
+            .ec-banner__statement {
+                text-align: center;
             }
 
             .ec-banner__vsep {
@@ -2805,7 +2761,7 @@
                     Exclusivity
                     <span class="amenities-ref__kicker-line"></span>
                 </span>
-                <h2 class="amenities-ref__title">Amenities That <span>Complement Your Status</span></h2>
+                <h2 class="amenities-ref__title">An Address That <span>Complements Your Status</span></h2>
                
             </header>
 
